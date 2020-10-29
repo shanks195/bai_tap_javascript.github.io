@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersise 22</title>
+    <SCRIPT language="JavaScript">
+        function CapNhat() {
+            document.title = document.getElementsByName('TieuDe')[0].value; /* Thay đổi tiêu đề của trang Web */
+            document.bgColor = document.getElementsByName('MauNen')[0].value; /* Thay đổi màu nền của trang */
+            document.fgColor = document.getElementsByName('MauChu')[0].value; /* Thay đổi màu chữ của trang */
+            window.defaultStatus = document.getElementsByName('TrangThai')[0].value; /* Thay đổi dòng trạng thái của cửa sổ */
+        }
+    </SCRIPT>
+</head>
+
+<body>
+    <div id="excersise">
+        <ul>
+            <li id="Home"><a href="../index.html">home</a></li>
+        </ul>
+        <INPUT type="text" name="TieuDe" value="Tiêu đề mới">
+        <INPUT type="text" name="MauNen" value="Nhập màu vào đây (ví dụ blue)">
+        <BR>
+        <INPUT type="text" name="MauChu" value="Nhập màu chữ vào đây (ví dụ white)">
+        <INPUT type="text" name="TrangThai" value="Nhập dòng trạng thái vào đây ">
+        <BR>
+        <INPUT type="button" name="ThayDoi" value="Thay đổi" onClick="CapNhat();">
+    </div>
+</body>
+
+</html>

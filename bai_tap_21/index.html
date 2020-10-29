@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersise 21</title>
+</head>
+
+<body>
+    <div id="excersise">
+        <ul>
+            <li id="Home"><a href="../index.html">home</a></li>
+        </ul>
+        <INPUT type="text" name="SoHang1"> +
+        <INPUT type="text" name="SoHang2"> =
+        <INPUT type="text" name="KetQua">
+        <INPUT type="button" value="Tính tổng" onclick="hienthi() ">
+        <script>
+            function hienthi() {
+                var kq = document.getElementsByName('KetQua')[0];
+                var sohang1 = document.getElementsByName('SoHang1')[0].value;
+                var sohang2 = document.getElementsByName('SoHang2')[0].value;
+                kq.value = parseInt(sohang1) + parseInt(sohang2);
+                console.log(kq);
+
+
+            }
+        </script>
+    </div>
+</body>
+
+</html>

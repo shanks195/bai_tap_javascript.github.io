@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersise 26</title>
+</head>
+
+<body>
+    <div id="excersise">
+        <ul>
+            <li id="Home"><a href="../index.html">home</a></li>
+        </ul>
+        <script language="javaScript">
+            function DoiMau() {
+                window.document.bgColor = document.getElementsByName('Mau')[0].value;
+                // Hoặc viết: window.document.bgColor = Mau.value;
+            }
+        </script>
+
+        Bạn hãy chọn màu nền:
+        <Select name="Mau" onchange="DoiMau()">
+            <option value ="red" > Màu đỏ </option>
+            <option value ="blue"> Màu xanh </option>
+            <option value ="brown"> Màu nâu </option>
+            <option value ="lavender"> Màu xanh nhạt</option>
+            </select>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersie 5</title>
+</head>
+
+<body>
+    <div id="excersise">
+        <ul>
+            <li id="Home"><a href="../index.html">HOME</a></li>
+            <input type="button" onclick="HienThi()" name="msg" value="welcome">
+            <script language="javascript">
+                function HienThi() {
+                    var value = "wecome to people";
+                    document.getElementsByName('msg')[0].value = value;
+                    alert(value);
+                    alert("Ban hay nhập vào ô text và thử lại!");
+                }
+            </script>
+        </ul>
+
+    </div>
+</body>
+
+</html>

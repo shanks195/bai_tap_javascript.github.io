@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersise 9</title>
+</head>
+
+<body>
+    <div id="excersise">
+        <ul>
+            <li id="Home"><a href="../index.html">HOME</a></li>
+
+            <script languagle="Javascript">
+                var namSinh, namHienTai, old;
+                var D = new Date();
+                namHienTai = D.getFullYear();
+                namSinh = prompt("Ban hãy nhập năm sinh vào:", "");
+                old = namHienTai - namSinh;
+                do {
+                    document.write("Sổ tuổi của bạn là:" + old);
+                } while (parseInt(namSinh) > namHienTai)
+            </script>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

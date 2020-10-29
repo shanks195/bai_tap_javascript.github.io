@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersise 6</title>
+</head>
+
+<body>
+    <div id="excersise">
+        <ul>
+            <li id="Home"><a href="../index.html">HOME</a></li>
+            <input type="button" value="Ngay thang hien tại" onclick="fullDate()">
+            <script language="javascript">
+                function fullDate() {
+                    var today = new Date();
+                    var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+                    alert(date);
+                }
+            </script>
+        </ul>
+
+    </div>
+</body>
+
+</html>

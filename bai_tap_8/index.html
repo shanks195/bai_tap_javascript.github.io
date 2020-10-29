@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersise 8/ Tính tuổi</title>
+</head>
+
+<body>
+    <div id="excersise">
+        <ul>
+            <li id="Home"><a href="../index.html">HOME</a></li>
+
+            <script language="javascript">
+                var D = new Date();
+                var NamHienTai, NamSinh;
+
+                NamSinh = prompt('Hãy nhập vào năm sinh :', "");
+                NamHienTai = D.getFullYear();
+                document.write("Tuỗi của ban bây giờ là: " + (NamHienTai - NamSinh));
+            </script>
+        </ul>
+
+    </div>
+</body>
+
+</html>
