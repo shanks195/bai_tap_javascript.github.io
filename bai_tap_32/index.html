@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersise 32</title>
+</head>
+
+<body>
+    <div id="excersise">
+        <ul>
+            <li id="Home"><a href="../index.html">home</a></li>
+        </ul>
+        <br> Số ký tự đã gõ: <input type="text" name="SoKyTu">
+        <BR>
+        <textarea name="NoiDung" cols=50 rows="10" onKeyUp="KiemTra();"> </textarea>
+        <BR>
+        <script type="text/javascript">
+            function KiemTra() {
+                if (document.getElementsByName('NoiDung')[0].value.length > 200) alert("Bạn đã gõ quá số ký tự cho phép!");
+                document.getElementsByName('SoKyTu')[0].value = document.getElementsByName('NoiDung')[0].value.length; // Hiển thị số ký tự trong textbox SoKyTu
+            }
+        </script>
+    </div>
+</body>
+
+</html>

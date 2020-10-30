@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersise 29</title>
+</head>
+
+<body>
+    <div id="excersise">
+        <ul>
+            <li id="Home"><a href="../index.html">home</a></li>
+        </ul>
+        <h1>Giới thiệu 1 số hàm build in</h1>
+        <ul>
+            <li>alert
+                <br> In ra bản thông báo.Nó được khai báo như sau: <br> alert('');
+            </li>
+
+            <li>console
+                <br>In kết quả trong console trong trình duyệt.Nó được khai báo như sau: <br>console.log(''); console.warn('');console.err('');
+            </li>
+            <li>confirm</li>
+            <br> In ra hộp thoại confirm.Cho người dùng lựa chọn. Nó dược khai báo như sau: <br>confirm('');
+            <li>prompt</li>
+            <br>In ra bãn thông báo cho người dùng nhập vào mà ta khai báo yêu cầu.Nó dược khai báo như sau: <br>prompt('');
+            <li>set timeout
+                <br>In ra ket qua mà ta xác định thời gian cho nó xuất hiên.Nó được khai báo như sau <br> setTimeout(function(){},so_thoi_gian_xuat_hien);
+            </li>
+            <li>set interval
+                <br>In ra ket quả liên tục khi dủ thời gian cho nó xuat hiện.Nó được khái bao như sau: <br>setInterval()
+            </li>
+        </ul>
+        <script type="text/javascript">
+            console.log(1);
+            alert(1);
+            confirm("Bạn có chọn kết quả này không?");
+            prompt("Xác nhận bạn dử tuổi:");
+            setTimeout(function() {
+                alert("Đã 200 ms");
+            }, 200);
+            setInterval(function() {
+                console.log("Da 200ms");
+            }, 200);
+        </script>
+    </div>
+</body>
+
+</html>
