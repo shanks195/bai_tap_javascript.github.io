@@ -16,25 +16,20 @@ tabs.forEach(tab => {
     })
 })
 
-const tabs1 = document.querySelector('.tabs1').querySelectorAll('[data-tab-target]')
-console.log("tab", tabs1);
-const tabContents1 = document.querySelector('.tab-content1').querySelectorAll('[data-tab-content]')
-console.log("content", tabContents1);
 
-tabs1.forEach(item => {
-    console.log("tabbbbbb", item);
-    item.addEventListener('click', () => {
-        console.log("dataset", item.dataset.tabTarget)
+let tabHeader = document.getElementsByClassName("tab-header")[0];
+let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
+let tabBody = document.getElementsByClassName("tab-body")[0];
 
-        const target = document.querySelector(item.dataset.tabTarget)
-        console.log(item.dataset.tabTarget)
-        tabContents1.forEach(tabContent => {
-            tabContent.classList.remove('activeTwo')
-        })
-        tabs1.forEach(item => {
-            item.classList.remove('activeTwo')
-        })
-        item.classList.add('activeTwo')
-        target.classList.add('activeTwo')
-    })
-})
+let tabsPane = tabHeader.getElementsByTagName("li");
+
+for (let i = 0; i < tabsPane.length; i++) {
+    tabsPane[i].addEventListener("click", function() {
+        tabHeader.getElementsByClassName("activeTwo")[0].classList.remove("activeTwo");
+        tabsPane[i].classList.add("activeTwo");
+        tabBody.getElementsByClassName("activeTwo")[0].classList.remove("activeTwo");
+        tabBody.getElementsByTagName("div")[i].classList.add("activeTwo");
+
+        tabIndicator.style.left = `calc(calc(100% / 4) * ${i})`;
+    });
+}
