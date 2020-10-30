@@ -418,10 +418,10 @@ span.creat_fact {
     font-size: 14px;
     border-radius: 13px;
     background: #ff8401;
-    padding: 4%;
-    width: 53%;
+    width: 100%;
     display: inline-block;
     color: aqua;
+    padding: 8%;
 }
 
 .upload:hover {
@@ -433,7 +433,7 @@ span.creat_fact {
     color: white;
     background: #8c6635;
     display: inline-block;
-    width: 54%;
+    width: 94%;
     padding: 2% 2%;
 }
 
@@ -446,13 +446,15 @@ span.creat_fact {
 .icon-align-justify {
     display: inline-block;
     float: left;
-    padding-left: 6%;
+    padding-left: 61%;
 }
 
 div#nav .parent-menu-parent {
+    display: inline-block;
     padding: 8px 0;
     width: 210px;
     background: #fff;
+    z-index: 100000;
 }
 
 #nav ul li,
@@ -475,52 +477,6 @@ div#nav .parent-menu-parent {
     background: #ebebebeb;
 }
 
-#nav>ul>ul.parent-menu>li>a {
-    color: #333;
-    text-decoration: none;
-    padding: 6px 12px;
-    display: block;
-}
-
-.sub-menu {
-    list-style: none;
-    position: relative;
-    ;
-}
-
-ul.sub-menu {
-    left: 210px;
-    position: absolute;
-    background: #fff;
-    top: -8%;
-}
-
-#nav ul {
-    width: 100%;
-}
-
-#nav>ul>li:hover>a {
-    background: #ebebeb;
-    color: #000;
-}
-
-.sub-menu .li {
-    padding-right: 5%;
-    display: inline-block;
-    float: left;
-}
-
-ul.sub-menu {
-    width: 444px!important;
-}
-
-ul.sub-menu {}
-
-.sub-menu>li p>a {
-    color: #333;
-    text-decoration: none;
-}
-
 .li p {
     display: block;
     padding: 3%;
@@ -528,41 +484,6 @@ ul.sub-menu {}
 
 .li p:hover {
     background: #ebebeb;
-}
-
-.sub-menu .li {
-    width: 240px;
-    padding-right: 10%;
-    display: inline-block;
-    float: left;
-}
-
-ul.sub-menu {
-    width: 600px!important;
-    padding: 6%;
-    height: 183px;
-}
-
-.sub-menu>li p>a {
-    color: #333;
-    text-decoration: none;
-}
-
-.li p {
-    display: block;
-    padding: 3%;
-}
-
-.li p:hover {
-    background: #ebebeb;
-}
-
-.li h1 {
-    border-bottom: 0.5px solid orange;
-    font-size: 19px;
-    color: orange;
-    padding-left: 0%;
-    padding-bottom: 7%;
 }
 
 [data-tab-content] {
@@ -590,6 +511,14 @@ ul.sub-menu {
     display: block;
 }
 
+.tab-body div {
+    display: none;
+}
+
+.tab-body div.activeTwo {
+    display: block;
+}
+
 .tab1 {
     cursor: pointer;
 }
@@ -604,6 +533,35 @@ tab-contentOne .activeTwo {
     font-weight: 700;
 }
 
+.activeTwo.tab {
+    color: black;
+}
+
 .activeTwo.tab1 {
     background: red;
+}
+
+.activeTwo.tab {
+    color: black;
+}
+
+.upload-source {
+    position: relative;
+}
+
+div#nav {
+    position: absolute;
+    overflow: hidden;
+}
+
+ul.tab-header {
+    display: none;
+}
+
+.parent-menu-parent:hover ul.tab-header {
+    display: block;
+}
+
+div#nav {
+    overflow: hidden;
 }
