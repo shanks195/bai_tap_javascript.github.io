@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LÀM VIỆC VỚI CHUỖI</title>
+</head>
+
+<body>
+    <h1>LÀM VIỆC VỚI CHUỖI</h1>
+    <ul>
+        <li>1.length</li>
+        <li>2.Find index</li>
+        <li>3.cut String</li>
+        <li>4.Replace</li>
+        <li>5.Convert to upper case</li>
+        <li>6.Convert to lower case</li>
+        <li>7.trim</li>
+        <li>8.Split</li>
+        <li>9.Get a character by index</li>
+        <script>
+            var myString = 'Hoc JS tai f8! JS JS    ';
+            console.log('Ta có chuổi như sau: \'Hoc JS tai f8! JS JS\'' + '<br>')
+            console.log(myString.length);
+            console.log('Tìm vi trí giá tri ABC trong chuổi: ' + myString.indexOf('ABC') + '<br>');
+            console.log('Tim vi tri gia tri JS trong chuổi: ' + myString.indexOf('JS', 6) + '<br>');
+            console.log('Tim vi tri gia tri cuối cùng JS trong chuổi: ' + myString.lastIndexOf('JS') + '<br>');
+            console.log('Tim vi tri JS trong chuổi: ' + myString.search('JS') + '<br>');
+            console.log('Tim vi tri gia tri cuối cùng JS trong chuổi: ' + myString.slice(4, 6) + '<br>');
+            console.log('Tim vi tri gia tri cuối cùng JS trong chuổi: ' + myString.slice(-3, -1) + '<br>');
+            console.log('Thay dổi giá trị cần thay thế: ' + myString.replace('JS', 'Javascript') + '<br>');
+            console.log('Thay dổi tất cả giá tri bi trung lạp trong chổi: ' + myString.replace(/JS/g, 'Javascript') + '<br>');
+            console.log('Viết in hoa chuổi: ' + myString.toUpperCase() + '<br>');
+            console.log('Viết thường trong chuỗi: ' + myString.toLowerCase() + '<br>');
+            console.log("Loai bo khoang trang giưa hai dau" + myString.trim());
+            var language = 'Javascript, PHP,Ruby';
+            console.log("Quy đổi dang string thành array sau dấu /'phay'/:" + language.split())
+            console.log("Quy đổi dang string thành cac chữ cai theo dang mảng sau dấu /'phay'/:" + language.split(''));
+            console.log("get a character by index:" + language.charAt(10));
+        </script>
+    </ul>
+</body>
+
+</html>

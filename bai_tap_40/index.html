@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Số và làm viec với số</title>
+</head>
+
+<body>
+    <h1>Số và làm viec với số</h1>
+    <ul>
+        <li>1.Tao gia tri Number
+            <ul>
+                <li>Các cách tạo</li>
+                <li>Dùng cách nào? Tại sao?</li>
+                <li>Kiểm tra data type</li>
+            </ul>
+        </li>
+        <li>2.Làm viec với Number
+            <ul>
+                <li>Số thành chuổi: To String</li>
+
+                <li>làm tròn số: To Fixed</li>
+            </ul>
+        </li>
+
+    </ul>
+    <script>
+        //c1: Tao số thường
+        var age = 10;
+        var PI = 3.14;
+        //C2:Truyen doi tuong new Number()
+        var otherNumber = new Number(9);
+        var result = 20 / "abc";
+        console.log("Phep chia khong hop le: " + isNaN(result));
+        var myString = age.toString();
+        console.log(typeof myString);
+        console.log((30 / 20).toFixed(3));
+    </script>
+</body>
+
+</html>

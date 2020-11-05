@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Chuỗi -CHUỔI</title>
+</head>
+
+<body>
+    <h1>Chuỗi</h1>
+    <ul>
+        <li>
+            <h2>1.Tạo Chuỗi</h2>
+            <ul>
+                <li>Các cách tạo chuỗi</li>
+                <li>Nên dùng cách nào? Lý do</li>
+                <li>Kiểm tra data type</li>
+            </ul>
+        </li>
+        <li>
+            <h2>2.Một số case sữ dụng backslash (\)</h2>
+        </li>
+        <li>
+            <h2>3.Xem độ dài chuỗi</h2>
+        </li>
+        <li>
+            <h2>4.Chú ý độ dài khi viết code</h2>
+        </li>
+        <li>
+            <h2>4.Template tring es6</h2>
+        </li>
+    </ul>
+    <script>
+        //C1: Khái báo biến với 1 cặp nháy đơn hoặc cặp nháy kép và chứa 1 chuỗi
+        var fullName = 'Nguyễn Tô Thế Toàn \'tui la sieu nhan\'';
+        var gachcheo = 'Day la dau \\';
+        var noichuoi = 'hello baby' + '1.Anh yêu em vô điều kiên' + '2.Anh luôn hết lòng vì em' + '3.Anh luon lo lắng cho em';
+        console.log(noichuoi);
+        console.log(gachcheo);
+        //C2 sử dung doi tượng "string" được javascript tao sẵn và kết hợp với 1 từ khóa new để tạo ra một chuỗi rỗng
+        var fullName1 = new String('Toàn');
+        var firstName = "Toan";
+        var lastName = "Tô ";
+        console.log('Tôi là: ' + lastName.concat(firstName));
+        console.log(`Tôi là: ${lastName} ${firstName}`);
+        console.log(typeof fullName1);
+        console.log(typeof fullName);
+        console.log(fullName1);
+        console.log(fullName);
+        console.log(fullName.length)
+    </script>
+</body>
+
+</html>
